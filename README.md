@@ -1,15 +1,15 @@
 # Hashira_assignment
-## Problem
-Given `n` roots in JSON format (with base and value), reconstruct the polynomial coefficients.  
-Polynomial degree = `k - 1`, where `k` is provided in the JSON.
+run using
 
-## Input
-JSON file, e.g. `sample.json`:
-```json
-{
-  "keys": { "n": 4, "k": 3 },
-  "1": { "base": "10", "value": "4" },
-  "2": { "base": "2",  "value": "111" },
-  "3": { "base": "10", "value": "12" },
-  "6": { "base": "4",  "value": "213" }
-}
+g++ -std=c++17 -O2 main.cpp -o poly
+
+
+Run with a testcase JSON as input
+
+./poly < testcase1.json > output1.txt
+./poly < testcase2.json > output2.txt
+
+
+Check the results
+
+The polynomial coefficients will be written in output1.txt and output2.txt
